@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="../static/images/NVS-logos.jpeg" alt="" width="50" height="50">
+            NVS Clinics
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="appointment.html">Request an appointment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Patient registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login">Patient Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dictionary">Disease compendium</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="login-container">
+    <h3>Appointment booking</h3>
+    <form name="form1" action="/booking-confirm" method="POST">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Timings:</label>
+            <input type="time" id="appt" name="appt">
+        </div>
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword5">Preferred doctor:</label>
+            <input type="text" id="inputPassword5" name="doc" class="form-control" placeholder="Doctor">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

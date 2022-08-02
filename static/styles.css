@@ -1,0 +1,136 @@
+#carouselExampleIndicators .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 95vh;
+  overflow: hidden;
+}
+
+.navbar a{
+  position: relative;
+  top: 5px;
+  left: 10px;
+  font-weight: 600;
+  font-family: 'Prompt', sans-serif;
+}
+
+.navbar-nav {
+  display: inline-block;
+}
+
+.navbar-nav li {
+   display: inline-block;
+}
+
+body {
+  background-color: #dcdcf5;
+}
+
+#register-container {
+  margin-top: 20px;
+  background-color: #f5f5dc;
+  position: relative;
+  top: 30px;
+  left: 520px;
+  height: 600px;
+  width: 500px;
+  border: solid;
+}
+
+#register-container h3{
+  padding: 15px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#register-container label {
+  padding-left: 4px;
+  font-weight:600;
+}
+
+.title {
+  background-color: #f5f5dc;
+  font-weight: 700;
+  text-align: center;
+  border: solid 3px;
+}
+
+.form-row {
+  padding-top: 12px;
+  margin: auto;
+  width: 90%;
+}
+
+.form-group {
+  padding-top: 20px;
+  margin: auto;
+  width: 90%;
+}
+
+.btn {
+  margin-left: 204px;
+  margin-top: 25px;
+}
+
+.contact {
+  border: solid;
+  background-color: #f5f5dc;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.contact-list {
+  background-color: #f5f5dc;
+  margin-left: 10px;
+  height: 455px;
+  border: solid;
+  padding-left: 20px;
+}
+
+.contact-list h3 {
+  padding-left: 50px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Prompt', sans-serif;
+}
+
+.contact-list p {
+  padding-left: 50px;
+  font-family: 'Prompt', sans-serif;
+
+}
+
+.contact-list img {
+  padding-top: 5px;
+}
+
+#dict-container {
+  background-color: #f5f5dc;
+  border: solid;
+  margin: 50px;
+}
+
+#login-container {
+  margin-top: 130px;
+  background-color: #f5f5dc;
+  position: relative;
+  top: 30px;
+  left: 530px;
+  height: 350px;
+  width: 500px;
+  border: solid;
+}
+
+#login-container h3{
+  padding: 15px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#login-container label {
+  padding-left: 4px;
+  font-weight:600;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../static/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <title>NVS Clinic</title>
+</head>
+
+<body>
+
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  {% for message in messages %}
+  <p>{{ message }}</p>
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../static/images/NVS-logos.jpeg" alt="" width="50" height="50">
+        NVS Clinics
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="appointment.html">Request an appointment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Patient registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">Patient login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="dictionary">Disease compendium</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../static/images/stethoscope-g3d4236246_1280.jpg" class="d-block w-100" alt="slide-1">
+      </div>
+      <div class="carousel-item">
+        <img src="../static/images/pexels-pixabay-40568.jpg" class="d-block w-100" alt="slide-2">
+      </div>
+      <div class="carousel-item">
+        <img src="../static/images/slide-3.jpg" class="d-block w-100" alt="slide-3">
+      </div>
+      <div class="carousel-item">
+        <img src="../static/images/slide-4.jpg" class="d-block w-100" alt="slide-4">
+      </div>
+      <div class="carousel-item">
+        <img src="../static/images/slide-5.jpg" class="d-block w-100" alt="slide-5">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="contact">
+    <h2>Contact Us</h2>
+  </div>
+  <div class="contact-info" style="display: flex">
+    <div style="width: 50%">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170381.1845126839!2d-53.87378196103161!3d48.144833487151956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b747e1c95b4a231%3A0xbfadf44ea321f21b!2sRandom%20Island!5e0!3m2!1sen!2sin!4v1658637459715!5m2!1sen!2sin"
+        width="770" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="contact-list" style="flex-grow: 1"><br>
+      <img src="../static/images/phone-512.webp" style="float:left;" height="38">
+      <h3>Phone-Number:</h3>
+      <p>123-456-789</p><br>
+      <img src="../static/images/25694.png" style="float:left;" height="38">
+      <h3>Address:</h3>
+      <p>308 Negra Arroyo Lane, Albuquerque, <br>New Mexico, 87004-9023, USA</p><br>
+      <a href="https://www.instagram.com/"><img src="../static/images/instagram.png" style="float:left;"
+          height="50"></a>
+      <h3>Instagram</h3>
+      <p>Follow us on our instagram page</p><br>
+      <a href="https://facebook.com"><img src="../static/images/Facebook-logo-blue-circle-large-white-f.png"
+          style="float:left;" height="40"></a>
+      <h3>Facebook</h3>
+      <p>Check us out on facebook</p>
+    </div>
+  </div>
+</body>
+
+</html>
