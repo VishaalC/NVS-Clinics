@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
-account_sid = os.environ['TWILIO_ACCOUNT_SID']
-auth_token = os.environ['TWILIO_AUTH_TOKEN']
+account_sid = 'ACe9020837345b57ad970947e85ad6f004'
+auth_token =  '5b89338c2b4ec51fc842f71dfcaddd74'
 client = Client(account_sid, auth_token)
 
 Session(app)
