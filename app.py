@@ -1,7 +1,6 @@
-from flask import Flask, flash, render_template, request, session
+from flask import Flask, render_template, request, session
 import os
 from twilio.rest import Client
-from flask_mail import Mail, Message
 import sqlite3 as sql
 import jinja2
 from flask_session import Session
