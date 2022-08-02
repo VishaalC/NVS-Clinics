@@ -104,7 +104,7 @@ def confirm():
 Kindly arrive a few minutes before the expected time.
 Thank you.''',
             from_='+19703641899',
-            to=to=f'+91{num_f}'
+            to=f'+91{num_f}'
         )
 
     print(message.sid)
