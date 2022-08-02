@@ -96,15 +96,15 @@ def confirm():
     with sql.connect('Database.db') as db:
         num = db.execute(
             "SELECT num FROM patients WHERE email IN (?)", (email,))
-
-    print(num.fetchall()[0][0])
+    
+    num_f = num.fetchall()[0][0]
     message = client.messages \
         .create(
             body=f'''Dear patient, Your appointment on {date} at {appt} with Dr.{doc} has been confirmed.
 Kindly arrive a few minutes before the expected time.
 Thank you.''',
             from_='+19703641899',
-            to=num
+            to=to=f'+91{num_f}'
         )
 
     print(message.sid)
