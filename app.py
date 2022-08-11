@@ -10,7 +10,7 @@ app = Flask(__name__)
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 account_sid = 'ACe9020837345b57ad970947e85ad6f004'
-auth_token =  'cde73b4f4d3e7759c38521cd2aa73c95'
+auth_token =  '9680e48175e3e327290d824e85dd7fa4'
 client = Client(account_sid, auth_token)
 
 Session(app)
