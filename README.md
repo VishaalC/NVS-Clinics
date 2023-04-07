@@ -13,7 +13,7 @@ Technologies used:
 - ICD API(to lookup diseases)
 - HTML, CSS and JS
 
-## How does the webpage works?
+## How does the webpage work?
 
 The visitor can either register as a new patient or as a returning patient. After logging in or registering, you can request an appointment and recieve an SMS (to twilio verfied numbers only) confirming your booked appointment.
 
